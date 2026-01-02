@@ -16,13 +16,14 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/api/projects")
 public class ProjectController {
+
     private final ProjectService projectService;
 
 
     @GetMapping
     public ResponseEntity<List<ProjectSummaryResponse>> getMyProjects(){
         Long userId = 1L;
-        return ResponseEntity.ok(ProjectService.getUserProjects(userId));
+        return ResponseEntity.ok(projectService.getUserProjects(userId));
     }
 
     @GetMapping("/{id}")
