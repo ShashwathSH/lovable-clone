@@ -1,1 +1,1 @@
-Lovable Clone using Spring Boot
+Lovable Clone using Spring Boot for backend
