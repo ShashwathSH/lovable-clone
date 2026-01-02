@@ -17,10 +17,6 @@ public class BillingController {
     private final PlanService planService;
     private final SubscriptionService subscriptionService;
 
-    public BillingController(PlanService planService, SubscriptionService subscriptionService) {
-        this.planService = planService;
-        this.subscriptionService = subscriptionService;
-    }
 
     @GetMapping("/api/plans")
     public ResponseEntity<List<PlanResponse>> getAllPlans(){

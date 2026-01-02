@@ -16,9 +16,6 @@ public class UsageController {
 
     private final UsageService usageService;
 
-    public UsageController(UsageService usageService) {
-        this.usageService = usageService;
-    }
 
     @GetMapping("/today")
     public ResponseEntity<UsageTodayResponse> getTodayUsage(){
