@@ -7,6 +7,7 @@ import com.shashwathsh.lovable_clone.entity.Project;
 import org.mapstruct.Mapper;
 
 import java.util.List;
+import java.util.Optional;
 
 
 // MapStruct is used because records are immutable and ModelMapper relies on setters.
